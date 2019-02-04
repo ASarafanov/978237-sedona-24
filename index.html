@@ -30,6 +30,9 @@
         <section class="hotel-booking">
         <b class="booking-title">Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p>
+          <img src="img/map.jpg" width="1200" height="593" alt="Расположение гостиниц на карте">
+        </p>
     <!--карта на JavaScript-->
       </section>
     </main>
@@ -38,14 +41,14 @@
       <p class="footer-hashtag">#VISITSEDONA</p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#" aria-label="Ссылка на Вконтакте сервиса бронирования отелей">Вконтакте</a></li>
+          <li><a class="social-button" href="#" aria-label="Ссылка на Facebook сервиса бронирования отелей">Фейсбук</a></li>
+          <li><a class="social-button" href="#" aria-label="Ссылка на Инстаграм сервиса бронирования отелей">Инстаграм</a></li>
         </ul>
       </div>
       <p class="footer-copyright">
         <b>WEBSITE BY:</b>
-        <a class="footer-button" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="footer-button" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на сайт разработчика">
           <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
         </a>
       </p>
@@ -53,9 +56,28 @@
     <!--popup окно-->
     <section class="popup-booking">
       <h2>Поиск гостиницы в Седоне</h2>
-      <!-- Здесь будет форма -->
-      <a class="popup-button" href="#">Найти</a>
-      <span class="popup-close">x</span>
+      <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="arriving">Дата заезда:</label>
+          <input class="arriving-calendar" id="arriving" type="date" name="arriving">
+        </p>
+        <p>
+          <label class="visually-hidden" for="departure">Дата заезда:</label>
+          <input class="arriving-calendar" id="departure" type="date" name="arriving">
+        </p>
+        <p>
+          <button class="decrease_adult" type="button" aria-label="Уменьшить количество взрослых">-</button>
+            <input type="text" id=""numbers_of_adults"" name="numbers_of_adults">
+          <button class="increase_adult" type="button" aria-label="Увеличить количество взрослых">+</button>
+        </p>
+        <p>
+          <button class="decrease_ children" type="button" aria-label="Уменьшить количество детей">-</button>
+            <input type="text" id=""numbers_of_children"" name="numbers_of_children">
+          <button class="increase_children" type="button" aria-label="Увеличить количество детей">+</button>
+        </p>
+      </form>
+      <a class="popup-button" href="#" aria-label="Закрыть окно">Найти</a>
+      <button class="popup-close" aria-label="Закрыть окно">x</button>
     </section>
   </body>
 </html>
