@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
     <!--хедер-->
@@ -19,17 +22,28 @@
         <img src="img/logo.svg" width="138" height="71" alt="Логотип SEDONA">
       </a>
     </header>
+    <!--картинка на бэкграунде с горами-->
+    <div class="sedona-hills">
+      <img class="welcome-image" src="img/intro-welcome.svg" width="459" height="353" alt="Приветствуем в городе Седона!">
+    </div>
+    <!--маска-->
+    <div class="hills-mask">
+      <img class="mask" src="img/intro-mask.svg" width="1201" height="59">
+    </div>
+
     <main class="container">
       <section class="main-section">
         <h1 class="visually-hidden">Информация о SEDONA</h1>
     <!--основная часть-->
-        <b class="sedona-info">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <p class="sedona-info">Седона — небольшой городок в Аризоне,<br>
+           заслуживающий большего!</p>
+        <p class="sedona-more-info">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     <!--интерактивный элемент для следующих заданий-->
       </section>
         <section class="hotel-booking">
-        <b class="booking-title">Заинтересовались?</b>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="booking-title">Заинтересовались?</p>
+        <p class="booking-more-info">Укажите предполагаемые даты поездки,<br>
+           и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <p>
           <img src="img/map.jpg" width="1200" height="593" alt="Расположение гостиниц на карте">
         </p>
@@ -47,36 +61,38 @@
         </ul>
       </div>
       <p class="footer-copyright">
-        <b>WEBSITE BY:</b>
-        <a class="footer-button" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на сайт разработчика">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
+        <b class="website-by">WEBSITE BY:</b>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на сайт разработчика">
+          <img class="academy-logo" src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
         </a>
       </p>
     </footer>
     <!--popup окно-->
     <section class="popup-booking">
-      <h2>Поиск гостиницы в Седоне</h2>
+      <h2 class="booking-form-title">Поиск гостиницы в Седоне</h2>
       <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-          <label class="visually-hidden" for="arriving">Дата заезда:</label>
+          <label class="arriving-text" for="arriving">Дата заезда:</label>
           <input class="arriving-calendar" id="arriving" type="date" name="arriving">
         </p>
         <p>
-          <label class="visually-hidden" for="departure">Дата заезда:</label>
+          <label class="departure-text" for="departure">Дата выезда:</label>
           <input class="arriving-calendar" id="departure" type="date" name="arriving">
         </p>
         <p>
-          <button class="decrease_adult" type="button" aria-label="Уменьшить количество взрослых">-</button>
-            <input type="text" id=""numbers_of_adults"" name="numbers_of_adults">
-          <button class="increase_adult" type="button" aria-label="Увеличить количество взрослых">+</button>
+          <label class="adults-text" for="numbers_of_adults">Взрослые:</label>
+          <button class="decrease" type="button" aria-label="Уменьшить количество взрослых">—</button>
+            <input class="type-form-text" type="text" id="numbers_of_adults" name="numbers_of_adults">
+          <button class="increase" type="button" aria-label="Увеличить количество взрослых">+</button>
         </p>
         <p>
-          <button class="decrease_ children" type="button" aria-label="Уменьшить количество детей">-</button>
-            <input type="text" id=""numbers_of_children"" name="numbers_of_children">
-          <button class="increase_children" type="button" aria-label="Увеличить количество детей">+</button>
+          <label class="children-text" for="numbers_of_children">Дети:</label>
+          <button class="decrease" type="button" aria-label="Уменьшить количество детей">—</button>
+            <input class="type-form-text" type="text" id="numbers_of_children" name="numbers_of_children">
+          <button class="increase" type="button" aria-label="Увеличить количество детей">+</button>
         </p>
       </form>
-      <a class="popup-button" href="#" aria-label="Закрыть окно">Найти</a>
+      <a class="popup-button" href="#" aria-label="Найти отель">Найти</a>
       <button class="popup-close" aria-label="Закрыть окно">x</button>
     </section>
   </body>
