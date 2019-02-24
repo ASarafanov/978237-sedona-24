@@ -28,10 +28,19 @@ a {
 
 .main-navigation {
   list-style: none;
+  position: relative;
 }
 
 .site-navigation {
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+
+  min-height: 56px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .site-navigation a {
@@ -191,10 +200,16 @@ a {
 }
 
 .main-footer {
+  padding: 36px 0;
+
   background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-hashtag {
+  margin: 0;
+  margin-right: 228px;
+  margin-left: 132px;
+
   font-family: "PT Sans", Arial, sans-serif;
   width: 136px;
   height: 16px;
@@ -211,10 +226,15 @@ a {
 }
 
 .footer-social {
+  margin: 0;
+
   text-align: center;
 }
 
 .footer-copyright {
+  margin: 0;
+  margin-left: auto;
+
   text-align: center;
 }
 
@@ -304,37 +324,6 @@ a {
 
 /* сетка */
 
-   /* Рамка для визуала */
-body > * {
-  background-color: rgba(0, 255, 0, 0.2);
-  border: 2px solid green;
-}
-
-body > * > * {
-  background-color: rgba(255, 0, 0, 0.2);
-  border: 2px solid red;
-}
-
-body > * > * > * {
-  background-color: rgba(0, 0, 255, 0.2);
-  border: 2px solid blue;
-}
-
-body > * > * > * > * {
-  background-color: rgba(255, 255, 0, 0.2);
-  border: 2px solid orange;
-}
-
-body > * > * > * > * > * {
-  background-color: rgba(196, 0, 255, 0.2);
-  border: 2px solid violet;
-}
-*/
-
-.main-navigation {
-  position: relative;
-}
-
 .main-header-logo {
   position: absolute;
   left: 50%;
@@ -348,46 +337,30 @@ body > * > * > * > * > * {
   padding: 0 10px;
 }
 
-.site-navigation {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-
-  min-height: 56px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .site-navigation li {
     box-sizing: border-box;
     width: 25%;
     padding-right: 12px;
     padding-left: 12px;
+    padding-top: 16px;
+}
+
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+    text-align: left;
 }
 
 .site-navigation li:nth-child(1) {
-    text-align: left;
-    padding-top: 16px;
     padding-left: 68px;
 }
 
-.site-navigation li:nth-child(2) {
-    text-align: left;
-    padding-top: 16px;
-    padding-left: 11px;
-}
-
-.site-navigation li:nth-child(3) {
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
     text-align: right;
-    padding-top: 16px;
-    padding-right: 6px;
 }
 
 .site-navigation li:nth-child(4) {
-    text-align: right;
-    padding-top: 16px;
-    padding-right: 60px;
+    padding-right: 68px;
 }
 
 .main-section,
@@ -408,25 +381,6 @@ body > * > * > * > * > * {
 .sedona-more-info,
 .booking-more-info {
   margin-top: 38px;
-}
-
-.footer-hashtag {
-  margin: 0;
-  margin-right: 228px;
-  margin-left: 132px;
-}
-
-.footer-copyright {
-  margin: 0;
-  margin-left: auto;
-}
-
-.footer-social {
-  margin: 0;
-}
-
-.main-footer {
-  padding: 36px 0;
 }
 
 .main-footer .container {
