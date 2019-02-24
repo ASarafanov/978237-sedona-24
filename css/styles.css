@@ -51,11 +51,14 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sedona-hills {
+.sedona-background-hills {
   width: 1200px;
   height: 800px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
 }
 
 .main-section {
@@ -297,4 +300,155 @@ a {
   letter-spacing: normal;
   text-align: center;
   color: #000000;
+}
+
+/* сетка */
+
+    /* Рамка для визуала
+body > * {
+  background-color: rgba(0, 255, 0, 0.2);
+  border: 2px solid green;
+}
+
+body > * > * {
+  background-color: rgba(255, 0, 0, 0.2);
+  border: 2px solid red;
+}
+
+body > * > * > * {
+  background-color: rgba(0, 0, 255, 0.2);
+  border: 2px solid blue;
+}
+
+body > * > * > * > * {
+  background-color: rgba(255, 255, 0, 0.2);
+  border: 2px solid orange;
+}
+
+body > * > * > * > * > * {
+  background-color: rgba(196, 0, 255, 0.2);
+  border: 2px solid violet;
+}
+*/
+
+.main-header {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-header-logo {
+  position: absolute;
+  margin-left: 537px;
+}
+
+.menu1 {
+  text-align: left;
+  flex-grow: 1;
+  padding-top: 14px;
+  padding-left: 72px;
+}
+
+.menu2 {
+  text-align: left;
+  flex-grow: 1;
+  padding-top: 14px;
+}
+
+.menu3 {
+  text-align: right;
+  flex-grow: 1;
+  padding-top: 14px;
+}
+
+.menu4 {
+  text-align: right;
+  flex-grow: 1;
+  padding-top: 14px;
+  padding-right: 72px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  min-height: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-section,
+.hotel-booking {
+  padding: 0;
+
+  display; flex;
+  width: 1200px;
+  min-height: 216px;
+  justify-content: center;
+}
+
+.sedona-info,
+.booking-title {
+  margin-top: 61px;
+}
+
+.sedona-more-info,
+.booking-more-info {
+  margin-top: 38px;
+}
+
+.footer-hashtag {
+  margin: 0;
+  margin-right: 228px;
+  margin-left: 132px;
+}
+
+.footer-copyright {
+  margin: 0;
+  margin-left: auto;
+}
+
+.footer-social {
+  margin: 0;
+}
+
+.main-footer {
+  padding: 36px 0;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.popup-booking {
+  width: 568px;
+  height: 481px;
+}
+
+.popup-container {
+  padding: 55px;
+}
+
+/* страница каталога */
+
+.hotel-info {
+  width: 1056px;
+  margin-left: 72px;
+}
+
+.hotel-info li {
+  list-style: none;
+}
+
+.hotels-list {
+  margin: 0;
+  padding: 0;
 }

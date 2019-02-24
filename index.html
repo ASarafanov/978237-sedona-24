@@ -11,26 +11,27 @@
     <!--хедер-->
     <header class="main-header">
       <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="138" height="71" alt="Логотип SEDONA">
+        </a>
         <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+            <li class="menu1"><a href="#">Информация</a></li>
+            <li class="menu2"><a href="#">Фото и видео</a></li>
+            <li class="menu3"><a href="#">Карта штата</a></li>
+            <li class="menu4"><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
-      <a class="main-header-logo">
-        <img src="img/logo.svg" width="138" height="71" alt="Логотип SEDONA">
-      </a>
     </header>
     <!--картинка на бэкграунде с горами-->
-    <div class="sedona-hills">
-      <img class="welcome-image" src="img/intro-welcome.svg" width="459" height="353" alt="Приветствуем в городе Седона!">
+    <div class="sedona-background-hills">
+      <div class="sedona-hills">
+        <img class="welcome-image" src="img/intro-welcome.svg" width="459" height="353" alt="Приветствуем в городе Седона!">
+      </div>
     </div>
     <!--маска-->
-    <div class="hills-mask">
+    <div class="hills-mask container">
       <img class="mask" src="img/intro-mask.svg" width="1201" height="59">
     </div>
-
     <main class="container">
       <section class="main-section">
         <h1 class="visually-hidden">Информация о SEDONA</h1>
@@ -44,14 +45,16 @@
         <p class="booking-title">Заинтересовались?</p>
         <p class="booking-more-info">Укажите предполагаемые даты поездки,<br>
            и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <p>
-          <img src="img/map.jpg" width="1200" height="593" alt="Расположение гостиниц на карте">
-        </p>
     <!--карта на JavaScript-->
       </section>
+      <div>
+        <img src="img/map.jpg" width="1200" height="593" alt="Расположение гостиниц на карте">
+      </div>
+
     </main>
     <!--футер-->
     <footer class="main-footer">
+    <div class="container">
       <p class="footer-hashtag">#VISITSEDONA</p>
       <div class="footer-social">
         <ul>
@@ -66,10 +69,12 @@
           <img class="academy-logo" src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
         </a>
       </p>
+    </div>
     </footer>
     <!--popup окно-->
     <section class="popup-booking">
       <h2 class="booking-form-title">Поиск гостиницы в Седоне</h2>
+      <div class="popup-container">
       <form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label class="arriving-text" for="arriving">Дата заезда:</label>
@@ -93,6 +98,7 @@
         </p>
       </form>
       <a class="popup-button" href="#">Найти</a>
+    </div>
     </section>
   </body>
 </html>
