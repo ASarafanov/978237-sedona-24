@@ -27,20 +27,20 @@ a {
 }
 
 .main-navigation {
-  list-style: none;
   position: relative;
+
+  list-style: none;
 }
 
 .site-navigation {
-
   margin: 0;
   padding: 0;
 
-  list-style: none;
-
   min-height: 56px;
+
   display: flex;
   justify-content: space-between;
+  list-style: none;
 }
 
 .site-navigation a {
@@ -209,10 +209,10 @@ a {
   margin: 0;
   margin-right: 228px;
   margin-left: 132px;
-
-  font-family: "PT Sans", Arial, sans-serif;
   width: 136px;
   height: 16px;
+
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
