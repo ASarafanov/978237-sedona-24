@@ -27,9 +27,8 @@ a {
 }
 
 .main-navigation {
-  position: relative;
-
   list-style: none;
+  position: relative;
 }
 
 .site-navigation {
